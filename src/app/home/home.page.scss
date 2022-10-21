@@ -1,11 +1,13 @@
 #container {
   text-align: center;
 
-  position: absolute;
+ /*  position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
+  width: 100%;
+  height: 50vh;
 }
 
 #container strong {
@@ -24,4 +26,15 @@
 
 #container a {
   text-decoration: none;
+}
+.btn-big{
+  width: 50%;
+  padding: 1rem;
+  background: #e9e9;
+}
+.btn-big-other{
+  width: 50%;
+  padding: 1rem;
+  background: #e9e939;
+  color: #000;
 }

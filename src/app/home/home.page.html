@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Obtener Localizacion
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,25 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">xD</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <button id="find-me" class="btn btn-big">LOCATION NOW</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>    
+    <hr>
+    <button id="print-me" class="btn btn-big-other" (click)="print()">PRINT LOCATIONS</button>
+    <hr>
+    <div id="content-print">
+      <p>Longitud{{dataResult.latitudlongitud.lat}}</p>
+      <p>latitud{{dataResult.latitudlongitud.lng}}</p>
+      <p>codifo postal {{dataResult.zipcode}}</p>
+    </div>
+  </div>
+  <div id="container">
+    <button class="btn btn-arbol" (click)="arbol()">PINTAR ARBOL</button>
+    <div id="arbol-print"></div>
   </div>
 </ion-content>
